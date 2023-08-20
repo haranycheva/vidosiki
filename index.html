@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <button class="open-btn" type="button">open</button>
+    <div class="modal is-hidden">
+      <button class="close-btn">X</button>
+      <iframe
+      id="iframe"
+        src="https://player.vimeo.com/video/76979871"
+        width="640"
+        height="360"
+        frameborder="0"
+        allowfullscreen
+        allow="autoplay; encrypted-media"
+      ></iframe>
+    </div>
+      <div class="add-modal-back is-hidden">
+        <button class="close-btn-add">X</button>
+        <div class="add-modal">
+          <h1 class="add-title">
+            DONATE!!!!!
+          </h1>
+          <form class="add-form">
+            <input type="text" placeholder="ur name" name="name">
+            <input type="number" placeholder="card numb" name="numb">
+            <input type="number" placeholder="sum (in usd)" name="sum">
+            <button type="submit" class="donate-btn">donate</button>
+          </form>
+        </div>
+      </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
